@@ -1,0 +1,160 @@
+#mainContainer
+{
+    height: 100vh;
+    background-color: #87b1dc;
+    display: flex;
+    flex-direction: column;
+}
+.nav-bar
+{
+    height: 10%;
+    background-color: #111B21;
+    display: flex;
+    flex-direction: row;
+}
+#image-sec
+{
+    height: 100%;
+    width: 10%;
+    /* background-color: beige; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#image
+{
+    height: 80%;
+    width: 80%;
+    border-radius: 100%;
+}
+#group-desc
+{
+    height: 100%;
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#chat-name
+{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding-left: 2.5%;
+    cursor: pointer;
+    color: whitesmoke;
+    opacity: 0.8;
+    transition: 0.05s ease-in;
+}
+#chat-name:hover, #participants:hover
+{
+    opacity: 1;
+}
+#participants
+{   
+    padding-left: 2.5%;
+    letter-spacing: 1px;
+    padding-top: 1%;
+    cursor: pointer;
+    color: whitesmoke;
+    opacity: 0.6;
+}
+#nav-icon-sec
+{
+    height: 100%;
+    width: 35%;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+}
+.nav-icons
+{
+    font-size: 1.2rem;
+    color: #87b1dc;
+    cursor: pointer;
+}
+
+#chatContainer
+{
+    margin-top: 0%;
+    height: 80%;
+    width: 100%;
+    background-color: #222e35;
+    overflow-y: scroll;
+    scrollbar-width: none; 
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 5px 5px ;
+    /* padding-top: 2.5%; */
+}
+.container::-webkit-scrollbar
+{
+    display: none;
+}
+#selfMessage
+{
+    height: auto;
+    width: 45%;
+    margin-left: auto;
+    background-color: #87b1dc;
+    color: whitesmoke;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+    padding: 0.5rem;
+    border-radius: 15px 15px 0px 15px;
+}
+#clientMessage
+{
+    height: auto;
+    width: 35%;
+    margin-right: auto;
+    margin-top: 2%;
+    background-color: #2a3942;
+    color: whitesmoke;
+    /* opacity: 0.7; */
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    padding: 0.5rem;
+    border-radius: 15px 15px 15px 0px;
+    margin-bottom: 1%;
+}
+#textFieldSection
+{
+    height: 10%;
+    width: 100%;
+    background-color: #2a3942;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#textBox
+{
+    height: 60%;
+    width: 75%;
+    outline: 0;
+    border: none;
+    border-radius: 10px;
+    padding-left: 2%;
+}
+.textFieldIcon
+{
+    font-size: 1.5rem;
+    color: #87b1dc;
+    cursor: pointer;
+}
+.emoji
+{
+    padding-right: 2.5%;
+}
+.attach
+{
+    padding-right: 2.5%;
+}

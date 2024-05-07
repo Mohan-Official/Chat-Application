@@ -1,0 +1,79 @@
+#sideContainer
+{
+    height: 100vh;
+    width: 100%;
+    background-color: #111b21;
+}
+#selfNavSection
+{
+    height: 12%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+}
+#profileSection
+{
+    height: 100%;
+    width: 20%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#myProfile
+{
+    height: 85%;
+    width: 75%;
+    border-radius: 100%;
+    cursor: pointer;
+}
+#selfNameSection
+{
+    height: 100%;
+    width: 50%;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#selfNameSection label
+{
+    font-size: 1.2rem;
+    margin-left: 2.5%;
+    color: whitesmoke;
+}
+#selfIconSection
+{
+    height: 100%;
+    width: 30%;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.selfIcon
+{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#searchBarSection
+{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aquamarine; */
+}
+#contactChatContainer
+{
+    height: 78%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

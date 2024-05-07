@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/chat.css">
+    <title>Login Page</title>
+    <style>
+        /* body
+        {
+            background-color: aqua;
+            height: 100vh;
+            width: 100%;
+        } */
+    </style>
+</head>
+<body>
+    <form action="" id="login-form">
+        <input type="text" name="" id="username">
+        <input type="password" name="" id="password">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    const socket = io(); 
+    const loginForm = document.getElementById("login-form");
+    loginForm.addEventListener("submit",(e)=>
+    {
+        e.preventDefault()
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if(username == "Mohan" && password =="Mohan@2002")
+        {
+            socket.emit("success","move")
+        }
+        else
+        {
+            socket.emit("success","fail")
+        }
+        socket.on('login_failed', () => {
+            alert("User not found!!");
+        });
+
+        socket.on('login_success', () => {
+            window.location.href = "/";
+        });
+
+    })
+</script>
+</html>

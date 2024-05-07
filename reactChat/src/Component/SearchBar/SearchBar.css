@@ -1,0 +1,15 @@
+#searchbox
+{
+    height: 75%;
+    width: 90%;
+    outline: 0;
+    border-radius: 10px;
+    border: none;
+    padding-left: 2.5%;
+}
+#searchbox::placeholder
+{
+    color: #a5c5e4;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
